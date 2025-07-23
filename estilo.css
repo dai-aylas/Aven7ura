@@ -1,8 +1,6 @@
 /*CONTENEDORES*/
 body{
-    margin: 0;
     background-size: cover;
-    height: 100vh;
 }
 .content{
     display: flex;
@@ -11,8 +9,7 @@ body{
     flex-direction: column;
 }
 .inicio{
-    height: 100vh;
-    gap: 3%;
+    margin-top: 10vh;
 }
 .boton{
     gap: 40px;
@@ -170,14 +167,48 @@ button:hover{
 /*RESPONSIVO*/
 @media (max-width: 767px){
     body{
-    margin: 0;
-    background-size:cover;
+    background-size: 300%;
+    background-position-x: center;
     }
 
     .content{
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+    }
+
+    .inicio{
+    margin-top: 25vh;
+    }
+
+    .Texto{
+    text-size-adjust: 70%;
+    color: beige;
+    font-family:'Times New Roman', Times, serif;
+    margin: 6px;
+    text-align: center;
+    }
+
+    .fotito{
+    height: 150px ;
+    border-radius: 5dvb;
+    }
+
+    .boton{
+        gap: 10px;
+        flex-direction:column;
+    }
+
+    button{
+    width: 30vh;
+    border-radius: 5dvb;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    }
+    
+    button:hover{
+        transform: scale(1.2);
+    }
 }
